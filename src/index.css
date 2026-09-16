@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff7f7;
+  color: #2a1d12;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@theme {
+  --color-brand-red: #D42B2B;
+  --color-brand-red-deep: #A31D1D;
+  --color-brand-white: #FFF7F7;
+  --color-brand-card: #FFFDFB;
+  --color-brand-gold: #6E5211;
+  --color-brand-gold-soft: #8A6A1C;
+  --color-brand-ink: #2A1D12;
+  --color-brand-ink-soft: #5A4A3C;
+  --color-brand-line: #EADFD6;
+}
