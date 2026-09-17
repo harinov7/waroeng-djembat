@@ -5,7 +5,7 @@ const NAV_LINKS = [
   { href: '#menu', label: 'Menu' },
   { href: '#ulasan', label: 'Ulasan' },
   { href: '#lokasi', label: 'Lokasi' },
-  { href: '#linktree', label: 'Tautan' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 export default function Sidebar({ open, onClose }) {
@@ -54,7 +54,7 @@ export default function Sidebar({ open, onClose }) {
         </ul>
 
         <a
-          href="#linktree"
+          href="#contact"
           onClick={onClose}
           className="inline-flex justify-center items-center rounded-full bg-brand-red px-6 py-3 font-semibold text-white hover:bg-brand-redDeep transition-colors"
         >

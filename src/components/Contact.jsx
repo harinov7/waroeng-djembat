@@ -2,13 +2,10 @@ import Reveal from './Reveal';
 
 const LINKS = [{
   title: 'Pesan via WhatsApp',
-  link: 'https://wa.me/628123456789?text=Halo%20Admin'
+  link: 'https://wa.me/6281315933464?text=Halo+Admin+Papatong%2C+saya+ingin+pesan+%2F+tanya+menu+yang+tersedia'
 }, {
   title: 'Instagram @waroengnasidjembat',
   link: 'https://www.instagram.com/waroengnasidjembat/'
-}, {
-  title: 'Hubungi kami via Email',
-  link: 'mailto:dummy@gmail.com'
 }, {
   title: 'Selengkapnya',
   link: 'http://linktr.ee/waroengnasidjembat?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAad6daEaXBaodZHkreSEZqGEDv6g6fVZXitdvtueZWzXVh4k8Rr_oTpyhASEeg_aem_X7vEdDusy1Y4LQw2N-jqNg'

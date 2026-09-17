@@ -21,7 +21,7 @@ export default function Profile() {
         <Reveal delay={150}>
           <span className="block font-display italic text-brand-red mb-2.5">Cerita singkat</span>
           <h2 className="font-display font-semibold text-brand-gold text-3xl md:text-4xl">
-            Warung kecil, cerita panjang.
+            Warung Sunda, cerita panjang.
           </h2>
           <p className="mt-5 mb-8 max-w-[60ch] text-brand-inkSoft">
             Berawal dari lapak sederhana di dekat jembatan penyeberangan kampung, Warung Djembat

@@ -1,30 +1,30 @@
 import { useState } from 'react';
 import Reveal from './Reveal';
 
-import nasi_timbel from '../assets/nasi_timbel.avif'
-import pepes_ikan_mas from '../assets/pepes_ikan_mas.avif'
-import karedok_sunda from '../assets/karedok_sunda.avif'
-import sayur_asem from '../assets/sayur_asem.avif'
-import lalapan from '../assets/lalapan.avif'
-import es_cendol_gula_aren from '../assets/es_cendol_gula_aren.avif'
-import es_kelapa_muda from '../assets/es_kelapa_muda.avif'
+import ayam_kampung_bakar from '../assets/ayam_kampung_bakar.avif'
+import ayam_kampung_goreng from '../assets/ayam_kampung_goreng.avif'
+import gurame_goreng from '../assets/gurame_goreng.avif'
+import gurame_pecak from '../assets/gurame_pecak.avif'
+import gurame_pesmol from '../assets/gurame_pesmol.avif'
+import es_campur from '../assets/es_campur.avif'
+import es_lemon_tea from '../assets/es_lemon_tea.avif'
 
 
 const CATEGORIES = [
   { id: 'semua', label: 'Semua' },
-  { id: 'utama', label: 'Makanan utama' },
-  { id: 'sayur', label: 'Sayur & lalapan' },
-  { id: 'minum', label: 'Minuman' },
+  { id: 'ayam', label: 'Ayam' },
+  { id: 'ikan', label: 'Ikan' },
+  { id: 'minuman', label: 'Minuman' },
 ];
 
 const MENU_ITEMS = [
-  { cat: 'utama', emoji: nasi_timbel, name: 'Nasi Timbel Komplit', desc: 'Nasi bungkus daun pisang, ayam goreng, tahu tempe, lalap, dan sambal dadak.', price: 'Rp 28.000' },
-  { cat: 'utama', emoji: pepes_ikan_mas, name: 'Pepes Ikan Mas', desc: 'Ikan mas berbumbu rempah, dikukus dalam daun pisang hingga harum.', price: 'Rp 30.000' },
-  { cat: 'sayur', emoji: karedok_sunda, name: 'Karedok Sunda', desc: 'Sayuran mentah segar disiram bumbu kacang khas Sunda.', price: 'Rp 18.000' },
-  { cat: 'sayur', emoji: sayur_asem, name: 'Sayur Asem Segar', desc: 'Kuah asam segar berisi kacang panjang, jagung, dan labu siam.', price: 'Rp 15.000' },
-  { cat: 'sayur', emoji: lalapan, name: 'Lalapan Komplit', desc: 'Timun, kemangi, daun selada, dan terong bulat dengan sambal.', price: 'Rp 10.000' },
-  { cat: 'minum', emoji: es_cendol_gula_aren, name: 'Es Cendol Gula Aren', desc: 'Cendol hijau dengan santan segar dan gula aren asli.', price: 'Rp 12.000' },
-  { cat: 'minum', emoji: es_kelapa_muda, name: 'Es Kelapa Muda', desc: 'Kelapa muda segar dengan sirup gula aren, disajikan dingin.', price: 'Rp 15.000' },
+  { cat: 'ayam', emoji: ayam_kampung_bakar, name: 'Ayam Kampung Bakar', desc: 'diungkep dengan bumbu rempah tradisional lalu dipanggang di atas bara api, disajikan dengan olesan bumbu gurih manis.', price: 'Rp 33.000' },
+  { cat: 'ayam', emoji: ayam_kampung_goreng, name: 'Ayam Kampung Goreng', desc: 'diungkep dengan bumbu rempah kuning hingga empuk, lalu digoreng garing untuk menghasilkan tekstur luar yang renyah dan gurih khas.', price: 'Rp 33.000' },
+  { cat: 'ikan', emoji: gurame_goreng, name: 'Gurame Goreng', desc: 'ikan gurame segar yang dibumbui rempah seperti bawang putih, ketumbar, dan kunyit, lalu digoreng kering untuk menghasilkan tekstur luar yang renyah dengan daging ikan yang lembut dan gurih.', price: 'Rp 55.000' },
+  { cat: 'ikan', emoji: gurame_pecak, name: 'Gurame Pecak', desc: 'Disiram dengan kuah pecak hangat bercita rasa gurih, pedas, dan segar yang kaya akan rempah seperti kencur, jahe, dan cabai.', price: 'Rp 65.000' },
+  { cat: 'ikan', emoji: gurame_pesmol, name: 'Gurame Pesmol', desc: 'Disiram dengan kuah santan berbumbu kuning kaya rempah, bercita rasa gurih, asam, dan sedikit pedas dari irisan cabai serta belimbing wuluh.', price: 'Rp 60.000' },
+  { cat: 'minuman', emoji: es_campur, name: 'Es Campur', desc: 'Es penutup manis yang berisi aneka isian seperti agar-agar, cincau, buah-buahan, dan kolang-kaling, disiram dengan kuah santan atau susu, air gula, serta es serut.', price: 'Rp 15.000' },
+  { cat: 'minuman', emoji: es_lemon_tea, name: 'Es Lemon Tea', desc: 'minuman segar perpaduan antara teh hitam seduh dan perasan air lemon asli, disajikan dingin dengan es batu dan tambahan gula secukupnya.', price: 'Rp 12.000' },
 ];
 
 export default function Menu() {

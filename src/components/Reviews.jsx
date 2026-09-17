@@ -1,32 +1,32 @@
 import { useEffect, useState } from 'react';
 import Reveal from './Reveal';
 
-const REVIEWS = [
-  {
-    stars: '★★★★★',
-    quote: 'Nasi timbelnya juara, sambalnya nampol banget. Rasanya benar-benar seperti masakan rumah.',
-    name: 'Rina Yuliani',
-    role: 'Warga sekitar',
-  },
-  {
-    stars: '★★★★★',
-    quote: 'Suasananya adem dan santai, cocok buat makan siang bareng keluarga tiap akhir pekan.',
-    name: 'Deni Setiawan',
-    role: 'Pelanggan tetap',
-  },
-  {
-    stars: '★★★★☆',
-    quote: 'Ikan guramenya garing di luar, empuk di dalam. Porsinya juga pas untuk berdua.',
-    name: 'Fitri Handayani',
-    role: 'Pengunjung dari Bandung',
-  },
-  {
-    stars: '★★★★★',
-    quote: 'Sayur asemnya seger banget, pas buat cuaca panas. Pelayanannya juga ramah.',
-    name: 'Agus Prasetyo',
-    role: 'Pelanggan tetap',
-  },
-];
+const REVIEWS = [{
+  stars: '★★★★★',
+  quote: 'Nyaman dan enak gaess',
+  name: 'Puri Lavender3',
+  date: '4 minggu lalu',
+}, {
+  stars: '★★★★★',
+  quote: 'Sangat recomanded utk makan disini untuk rasa dijamin mantap, vairian menu jg banyak harga relatif murah...',
+  name: 'Rina Astuti',
+  date: 'sebulan lalu',
+}, {
+  stars: '★★★★☆',
+  quote: 'Nyari lalapan daun Pohpohan dan nemu di warun nasi djembat ini & memang ada tersedia banyak. Opsi menu lauk juga ada banyak macam nya mulai dari ayam, bebek, ikan dll.',
+  name: 'Zapir Ria',
+  date: '2 bulan lalu',
+}, {
+  stars: '★★★★★',
+  quote: 'Enak, murah, suasananya nyaman. Pas buat transit kalo lagi kena macet',
+  name: 'Taufik Zuhrianto',
+  date: '5 bulan lalu',
+}, {
+  stars: '★★★★★',
+  quote: 'Enak, lalapannya enak segar fresh, sayang sambel dadakan nya ngak pas dan ngak ada ikan mas goreng, tempat nyaman dan tempat parkir luas',
+  name: 'Jenny Majo',
+  date: '8 bulan lalu',
+}];
 
 // Cards visible per page: 1 on mobile, 2 on tablet, 3 on desktop.
 function useItemsPerPage() {
@@ -129,7 +129,7 @@ export default function Reviews() {
                       </div>
                       <div>
                         <b className="block text-sm">{r.name}</b>
-                        <span className="text-xs text-brand-inkSoft">{r.role}</span>
+                        <span className="text-xs text-brand-inkSoft">{r.date}</span>
                       </div>
                     </div>
                   </article>
@@ -148,9 +148,8 @@ export default function Reviews() {
                 onClick={() => goTo(i)}
                 aria-label={`Ke halaman ulasan ${i + 1}`}
                 aria-current={i === page}
-                className={`h-3  rounded-full transition-all ${
-                  i === page ? 'w-7 bg-brand-red' : 'w-3 bg-brand-line hover:bg-brand-red/50'
-                }`}
+                className={`h-2 rounded-full transition-all ${i === page ? 'w-6 bg-brand-red' : 'w-2 bg-brand-line hover:bg-brand-red/50'
+                  }`}
               />
             ))}
           </div>

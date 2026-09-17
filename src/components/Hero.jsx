@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="beranda"
-      className="relative overflow-hidden px-6 pt-16 pb-14 md:pt-20"
+      className="relative overflow-hidden px-6 pt-16 pb-14 md:pt-20 scroll-mt-10"
       style={{ backgroundImage: KAWUNG_PATTERN }}
     >
       <div className="max-w-6xl mx-auto grid md:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
