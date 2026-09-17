@@ -1,6 +1,15 @@
 import { useState } from 'react';
 import Reveal from './Reveal';
 
+import nasi_timbel from '../assets/nasi_timbel.avif'
+import pepes_ikan_mas from '../assets/pepes_ikan_mas.avif'
+import karedok_sunda from '../assets/karedok_sunda.avif'
+import sayur_asem from '../assets/sayur_asem.avif'
+import lalapan from '../assets/lalapan.avif'
+import es_cendol_gula_aren from '../assets/es_cendol_gula_aren.avif'
+import es_kelapa_muda from '../assets/es_kelapa_muda.avif'
+
+
 const CATEGORIES = [
   { id: 'semua', label: 'Semua' },
   { id: 'utama', label: 'Makanan utama' },
@@ -9,15 +18,13 @@ const CATEGORIES = [
 ];
 
 const MENU_ITEMS = [
-  { cat: 'utama', emoji: '🍚', name: 'Nasi Timbel Komplit', desc: 'Nasi bungkus daun pisang, ayam goreng, tahu tempe, lalap, dan sambal dadak.', price: 'Rp 28.000' },
-  { cat: 'utama', emoji: '🍗', name: 'Ayam Bakar Kampung', desc: 'Ayam kampung bakar bumbu kecap, disajikan dengan sambal terasi hangat.', price: 'Rp 32.000' },
-  { cat: 'utama', emoji: '🐟', name: 'Ikan Gurame Goreng', desc: 'Gurame segar digoreng garing, disajikan utuh dengan sambal dadak.', price: 'Rp 45.000' },
-  { cat: 'utama', emoji: '🍃', name: 'Pepes Ikan Mas', desc: 'Ikan mas berbumbu rempah, dikukus dalam daun pisang hingga harum.', price: 'Rp 30.000' },
-  { cat: 'sayur', emoji: '🥗', name: 'Karedok Sunda', desc: 'Sayuran mentah segar disiram bumbu kacang khas Sunda.', price: 'Rp 18.000' },
-  { cat: 'sayur', emoji: '🍲', name: 'Sayur Asem Segar', desc: 'Kuah asam segar berisi kacang panjang, jagung, dan labu siam.', price: 'Rp 15.000' },
-  { cat: 'sayur', emoji: '🥬', name: 'Lalapan Komplit', desc: 'Timun, kemangi, daun selada, dan terong bulat dengan sambal.', price: 'Rp 10.000' },
-  { cat: 'minum', emoji: '🍧', name: 'Es Cendol Gula Aren', desc: 'Cendol hijau dengan santan segar dan gula aren asli.', price: 'Rp 12.000' },
-  { cat: 'minum', emoji: '🥥', name: 'Es Kelapa Muda', desc: 'Kelapa muda segar dengan sirup gula aren, disajikan dingin.', price: 'Rp 15.000' },
+  { cat: 'utama', emoji: nasi_timbel, name: 'Nasi Timbel Komplit', desc: 'Nasi bungkus daun pisang, ayam goreng, tahu tempe, lalap, dan sambal dadak.', price: 'Rp 28.000' },
+  { cat: 'utama', emoji: pepes_ikan_mas, name: 'Pepes Ikan Mas', desc: 'Ikan mas berbumbu rempah, dikukus dalam daun pisang hingga harum.', price: 'Rp 30.000' },
+  { cat: 'sayur', emoji: karedok_sunda, name: 'Karedok Sunda', desc: 'Sayuran mentah segar disiram bumbu kacang khas Sunda.', price: 'Rp 18.000' },
+  { cat: 'sayur', emoji: sayur_asem, name: 'Sayur Asem Segar', desc: 'Kuah asam segar berisi kacang panjang, jagung, dan labu siam.', price: 'Rp 15.000' },
+  { cat: 'sayur', emoji: lalapan, name: 'Lalapan Komplit', desc: 'Timun, kemangi, daun selada, dan terong bulat dengan sambal.', price: 'Rp 10.000' },
+  { cat: 'minum', emoji: es_cendol_gula_aren, name: 'Es Cendol Gula Aren', desc: 'Cendol hijau dengan santan segar dan gula aren asli.', price: 'Rp 12.000' },
+  { cat: 'minum', emoji: es_kelapa_muda, name: 'Es Kelapa Muda', desc: 'Kelapa muda segar dengan sirup gula aren, disajikan dingin.', price: 'Rp 15.000' },
 ];
 
 export default function Menu() {
@@ -58,8 +65,8 @@ export default function Menu() {
           {visibleItems.map((item, i) => (
             <Reveal key={item.name} delay={(i % 3) * 90}>
               <article className="h-full flex flex-col gap-3.5 rounded-2xl border border-brand-line bg-brand-card p-6">
-                <div className="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-gradient-to-br from-brand-red/10 to-brand-gold/10 text-3xl">
-                  {item.emoji}
+                <div className="flex h-[65px] w-[65px] items-center justify-center rounded-full bg-gradient-to-br from-brand-red/10 to-brand-gold/10 text-3xl p-1">
+                  <img src={item.emoji} alt="nasi_timbel" className='rounded-full aspect-square'/>
                 </div>
                 <h3 className="text-lg font-semibold text-brand-ink">{item.name}</h3>
                 <p className="flex-1 text-sm text-brand-inkSoft">{item.desc}</p>
