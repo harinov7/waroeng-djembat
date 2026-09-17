@@ -148,8 +148,8 @@ export default function Reviews() {
                 onClick={() => goTo(i)}
                 aria-label={`Ke halaman ulasan ${i + 1}`}
                 aria-current={i === page}
-                className={`h-3  rounded-full transition-all ${
-                  i === page ? 'w-7 bg-brand-red' : 'w-3 bg-brand-line hover:bg-brand-red/50'
+                className={`h-2 rounded-full transition-all ${
+                  i === page ? 'w-6 bg-brand-red' : 'w-2 bg-brand-line hover:bg-brand-red/50'
                 }`}
               />
             ))}

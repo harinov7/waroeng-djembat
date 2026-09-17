@@ -6,7 +6,7 @@ const NAV_LINKS = [
   { href: '#menu', label: 'Menu' },
   { href: '#ulasan', label: 'Ulasan' },
   { href: '#lokasi', label: 'Lokasi' },
-  { href: '#linktree', label: 'Tautan' },
+  { href: '#contact', label: 'Kontak' },
 ];
 
 export default function Navbar({ onOpenSidebar }) {

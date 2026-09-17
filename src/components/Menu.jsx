@@ -64,7 +64,7 @@ export default function Menu() {
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {visibleItems.map((item, i) => (
             <Reveal key={item.name} delay={(i % 3) * 90}>
-              <article className="h-full flex flex-col gap-3.5 rounded-2xl border border-brand-line bg-brand-card p-6">
+              <article className="h-full flex flex-col gap-3.5 rounded-2xl border border-brand-line bg-brand-card p-6 transition-all hover:-translate-y-0.5 hover:shadow-md">
                 <div className="flex h-[65px] w-[65px] items-center justify-center rounded-full bg-gradient-to-br from-brand-red/10 to-brand-gold/10 text-3xl p-1">
                   <img src={item.emoji} alt="nasi_timbel" className='rounded-full aspect-square'/>
                 </div>

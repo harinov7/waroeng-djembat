@@ -17,7 +17,7 @@ const LINKS = [{
 
 export default function Contact() {
   return (
-    <section id="linktree" className="bg-brand-ink px-6 py-24 text-brand-white">
+    <section id="contact" className="bg-brand-ink px-6 py-24 text-brand-white">
       <div className="max-w-6xl mx-auto text-center">
         <Reveal>
           <span className="block font-display italic text-[#f0b0b0] mb-2.5">Sambungan langsung</span>
